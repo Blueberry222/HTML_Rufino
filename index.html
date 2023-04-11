@@ -8,18 +8,16 @@
 <body>
     <h1>Menu Dropdown</h1>
     Desenvolver um menu dropdown semelhante ao modelo abaixo utilizando apenas HTML, CSS e Javascript.
-
-    blue on click (persist color) / Silver on mousehover
     <br>
-
-    <button class="btnAbrir" type="button" onclick="abrirLista()">Exemplo Dropdown</button> <br>
-
-    <div id="dropdown" style="display: none;">
-        <ul class="listaItens">
-          <li><a href="#">HTML</a></li>
-          <li><a href="#">CSS</a></li>
-          <li><a href="#">JavaScript</a></li>
-        </ul>
+    <br>
+    <div class="dropdown">
+      <button onclick="abrirLista()" class="btnAbrir" id="botao">Dropdown</button>
+      <div id="minhaLista" class="listaItens" style="display: none;">
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+        <a href="#">JS</a>
       </div>
     </div>
+
+
 </body>

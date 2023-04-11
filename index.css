@@ -1,3 +1,4 @@
+/* cor padrão do botão */
 .btnAbrir{
     background-color: #0099ff;
     color: white;
@@ -7,21 +8,38 @@
     cursor: pointer;
 }
 
-.btnAbrir:hover, .btnAbrir:focus {
+/* Ao passar ou focar o mouse, muda a cor  */
+.btnAbrir:hover, :focus{
     background-color: #2980B9;
   }
 
-.listaItens{
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+/* O container <div> que posiciona tudo. */
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-.listaItens a {
+/* Conteudo da lista (Escodido por padrão graças ao display none). */
+.listaItens {
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links dentro do dropdown */
+.listaItens a { 
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
+
+/* Mudar a cor dos links do dropdown ao passar o mouse por cima. */
+.listaItens a:hover {
+  background-color: #ddd;
+}
+
+/* Mostra o menu. (É utilizado o JS para adicionar essa class no container listaItens quando o usuário clica no botão de dropdown) */
+.show {display: block;}
